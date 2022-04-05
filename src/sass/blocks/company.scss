@@ -1185,16 +1185,19 @@
     &__slide {
         height: rem(250);
         width: rem(300);
-        background-color: pink;
+        background-color: #fff;
+        color: #000;
             @media (max-width: rem(576)){
                 padding: 0 rem(20);
     }
             h1 {
                 font-size: rem(30);
+                padding: rem(15) 0 rem(15) rem(30) ;
             }
             p {
                 font-size: rem(17);
                 line-height: math.div(25, 17);
+                padding: rem(15) 0 rem(15) rem(30) ;
             }
     }
 }

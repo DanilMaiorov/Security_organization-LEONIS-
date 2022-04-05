@@ -193,10 +193,10 @@ button:hover {
 @import "./blocks/base.scss";
 
 //Стили попапов
-@import "./base/popup.scss";
+//@import "./base/popup.scss";
 
 // Подключение стилей общих элементов проекта
-@import "./blocks/common.scss";
+//@import "./blocks/common.scss";
 
 // Подключение стилей отдельных блоков
 @import "./blocks/header.scss";
@@ -204,6 +204,6 @@ button:hover {
 @import "./blocks/footer.scss";
 
 // Подключение стилей отдельных страниц
-@import "./blocks/home.scss";
+//@import "./blocks/home.scss";
 
 //@import './block/*.scss'; //изза плагина sass-glob можем подключать файлы стилей через *
