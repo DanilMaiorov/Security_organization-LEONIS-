@@ -1,4 +1,6 @@
 import "./modules/dynamicAdapt.js";
-import { sum } from './modules/first.js';
+import { burger } from './modules/burger.js';
+import { sliderSwiper } from './modules/swiper.js';
 
-sum();
+burger();
+sliderSwiper();

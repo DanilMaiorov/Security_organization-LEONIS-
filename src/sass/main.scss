@@ -4,32 +4,38 @@
 
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 // Подключить если есть локальные файлы шрифтов
-@import "./fonts/fonts";
+//@import "./fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
-@import "./fonts/icons.scss";
+//@import "./fonts/icons.scss";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: TTChocolatesMedium; //локальный шрифт
+$fontFamily: 'Fira Sans', sans-serif; //локальный шрифт
+$secondFont: 'Oswald', sans-serif; //локальный шрифт
 
-$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontSize: rem(17); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #000; // Цвет шрифта по умолчанию
+$mainColor: #fff; // Цвет шрифта по умолчанию
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
 $minWidth: 320;
 // Ширина полотна (макета)
-$maxWidth: 1920;
+$maxWidth: 1440;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1590;
+$maxWidthContainer: 1200;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 0;
 
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
@@ -49,6 +55,8 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 
 body {
+	background-color: #3c3c3c;
+	//margin: 0 auto;
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
@@ -56,6 +64,66 @@ body {
 	}
 	// Сайт загружен
 	.loaded & {
+	}
+}
+a {
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: #fff;
+	text-underline-offset: rem(3);
+	text-decoration-thickness: 2px;
+}
+button {
+	cursor: pointer;
+}
+button:hover {
+	background-color: #000;
+	color: #fff;
+}
+.button {
+	width: rem(281);
+	height: rem(50);
+	background-color: #1B1B1B;
+	border-radius: rem(15);
+	color: #898989;
+	font-family: $secondFont;
+	font-weight: 500;
+	font-size: rem(20);
+	line-height: math.div(30, 20);
+	@media (max-width: rem(1100)){
+		width: rem(261);
+		font-size: rem(18);
+	}
+	@media (max-width: $tablet){
+		width: rem(251);
+		font-size: rem(18);
+		height: rem(45);
+		background-color: #000;
+		color: #fff;
+	}
+	@media (max-width: rem(870)){
+		width: rem(231);
+		font-size: rem(17);
+	}
+	@media (max-width: rem(576)){
+		width: rem(216);
+		font-size: rem(16);
+		height: rem(40);
+	}
+	@media (max-width: $mobileSmall){
+		width: rem(191);
+		font-size: rem(14);
+		height: rem(35);
+	}
+	@media (max-width: rem(420)){
+		width: rem(161);
+		font-size: rem(12);
+	}
+	@media (max-width: rem(375)){
+		width: rem(131);
+		height: rem(30);
 	}
 }
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -132,6 +200,7 @@ body {
 
 // Подключение стилей отдельных блоков
 @import "./blocks/header.scss";
+@import "./blocks/company.scss";
 @import "./blocks/footer.scss";
 
 // Подключение стилей отдельных страниц

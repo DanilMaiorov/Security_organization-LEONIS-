@@ -1,15 +1,404 @@
 <!DOCTYPE html>
 @@include('blocks/head.html', {
-    "title":"Главная"
+    "title":"ООО ''Леонис''"
 })
 <html lang="ru">
 
 <body>
     @@include("blocks/header.html")
-    <main>
-        <h1>Main</h1>
-    </main>
+    @@include("blocks/intro.html")
+    <div class="wrapper">
+        <main class="main">
+            <section class="about" id="company">
+                <div class="about__wrapper">
+                            <div class="about__left left-about">
+                                <div class="left-about__description description-about">
+                                    <div class="description-about__title">
+                                        <h3>О КОМПАНИИ</h3>
+                                    </div>
+                                    <div class="description-about__name">
+                                        <h2>ОХРАННАЯ ОРГАНИЗАЦИЯ СТБ</h2>
+                                    </div>
+                                    <div class="description-about__text about-text">
+                                        <div class="about-text__par1">
+                                            <span>Организация СТБ входит в группу охранных компаний, основанную в 1994 году. За 15 лет существования на рынке группа компаний постоянно развивается и расширяет спектр своих услуг. </span>
+                                        </div>
+                                        <div class="about-text__par2">
+                                            <span>Независимо от того нуждаетесь ли вы в защите собственного дома, квартиры, хотите защитить бизнес или нуждаетесь во внедрении полного комплекса интегрированных систем безопасности, сотрудники нашей компании в вашем распоряжении. Профессиональная деятельность компании застрахована СПАО «Ингосстрах»</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about__img">
+                                    <img src="./img/background_2.png" alt="about-img">
+                                </div>
+                            </div>
+                        <div class="about__info info-about">
+                            <div class="about-info__container">
+                                <div class="about-info__wrapper wrapper-info">
+                                    <div class="wrapper-info__item">
+                                        <span>700+</span> 
+                                        <div class="wrapper-infotext__item-extra">
+                                            <span>лет на российском рынке</span>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-info__img">
+                                        <img src="./img/dots-line.png" alt="dots-line">
+                                        <img src="./img/dots-line.png" alt="dots-line">
+                                    </div>
+                                    <div class="wrapper-info__item">
+                                        <span>15+</span>
+                                        <div class="wrapper-infotext__item-extra">
+                                            <span>лет на российском рынке</span>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-info__img">
+                                        <img src="./img/dots-line.png" alt="dots-line">
+                                        <img src="./img/dots-line.png" alt="dots-line">
+                                    </div>
+                                    <div class="wrapper-info__item">
+                                        <span>100+</span>
+                                        <div class="wrapper-infotext__item-extra">
+                                            <span>русских и зарубежных клиентов</span>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="about__infotext">
+                            <div class="about-infotext__container">
+                                <div class="about-infotext__wrapper wrapper-infotext">
+                                    <div class="wrapper-infotext__item">
+                                        <span>подготовленных сотрудников</span> 
+                                    </div>
+                                    <div class="wrapper-infotext__item">
+                                        <span>лет на российском рынке</span>
+                                    </div>
+                                    <div class="wrapper-infotext__item">
+                                        <span>русских и зарубежных клиентов</span>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <div class="services__container">
+                    <div class="services__wrapper services-wrapper">
+                        <div class="services-wrapper__left">
+                            <div class="services-wrapper__left-title">
+                                <h2>НАШИ УСЛУГИ</h2>
+                            </div>
+                            <div class="services-wrapper__left-text">
+                                <span>Наша основная задача — защита жизни и здоровья граждан, сохранность имущества, транспортных средств и защита интересов заказчика. Здесь можно ознакомится с перечнем наших услуг и ориентировочной стоимостью. Детальную иформацию вы можете получить у менеджеров компании</span>
+                            </div>
+                        </div>
+                        <div class="services-wrapper__right">
+                            <img src="./img/dots-6rows.png" alt="dots-background">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service-first-item">
+                <div class="service-first-item__inner">
+                    <div class="inner-item__wrapper inner-item">
+                        <div class="inner-item__left left-item">
+                            <div class="left-item__title">
+                                <h2>Охрана объектов</h2>
+                            </div>
+                            <ul class="left-item__text-list">Профессиональная охрана объектов гарантирует безопасность граждан и имущества компании. Постоянное присутствие сотрудников компании на объекте обеспечит:
+                                    <li class="left-item__text-listitem">осуществление внутриобъектового режима на объектах различной сложности;</li>
+                                    <li class="left-item__text-listitem">предотвращение порчи и хищения имущества собственника;</li>
+                                    <li class="left-item__text-listitem">предотвращение противоправных действий в отношении заказчика, его персонала и посетителей, находящихся на территории объекта;</li>
+                                    <li class="left-item__text-listitem">пропускной режим автотранспорта и пешеходов;</li>
+                                    <li class="left-item__text-listitem">VIP-обслуживание мероприятий любой сложности;</li>
+                                    <li class="left-item__text-listitem">контроль за техническим и противопожарным состоянием объекта;
+                                    </li>
+                                    <li class="left-item__text-listitem">предотвращение террористических актов и диверсий;
+                                    </li>
+                            </ul>
+                            <div class="left-item__price">
+                                <div class="left-item__price-title">
+                                    Стоимость в час за один пост:
+                                </div>
+                                <ul class="price-list">
+                                    <li class="left-item__price-item">
+                                        <div class="item-name">Невооруженная круглосуточная</div>
+                                        <div class="dot"></div>
+                                        <div class="item-price">от 150 руб</div>
+                                    </li>
+                                    <li class="left-item__price-item">
+                                        <div class="item-name">Невооруженная 12-ти часовая</div>
+                                        <div class="dot"></div>
+                                        <div class="item-price">от 280 руб</div>
+                                    </li>
+                                    <li class="left-item__price-item">
+                                        <div class="item-name">Вооруженная круглосуточная</div>
+                                        <div class="dot"></div>
+                                        <div class="item-price">от 190 руб</div>
+                                    </li>
+                                    <li class="left-item__price-item">
+                                        <div class="item-name">Вооруженная 12-ти часовая</div>
+                                        <div class="dot"></div>
+                                        <div class="item-price">от 300 руб</div>
+                                    </li>
+                                    <li class="left-item__price-item">
+                                        <div class="item-name">Патрульная группа</div>
+                                        <div class="dot"></div>
+                                        <div class="item-price">от 300 руб</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inner-item__right"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="service-second-item">
+                <div class="service-second-item__inner">
+                    <div class="inner-second-item__wrapper inner-second-item">
+                        <div class="inner-second-item__left"></div>
+                        <div class="inner-second-item__right right-second-item">
+                            <div class="right-second-item__title">
+                                <h2>Обеспечение безопасности VIP-клиентов</h2>
+                            </div>
+                            <div class="right-second-item__text">
+                                <p>Для многих известных и успешных людей личая охрана — это жизненная необходимость. Предлагаем воспользоваться услугами наих опытных специалистов для обеспечения вашей личной безопасности.</p>
+                            </div>
+                            <ul class="right-second-item__text-list">Услуга включает такие направления работы:
+                                    <li class="right-second-item__text-listitem">обеспечение личной безопасности VIP-персон, руководителей и первых лиц российских и зарубежных компаний;</li>
+                                    <li class="right-second-item__text-listitem">личная охрана официальных и иностранных делегаций;
+                                    </li>
+                                    <li class="right-second-item__text-listitem">обеспечение личной безопасности, при проведении культурно-массовых и зрелищных мероприятий;
+                                    </li>
+                            </ul>
+                            <div class="right-second-item__price">
+                                <div class="right-second-item__price-title">
+                                    Стоимость в час за один пост:
+                                </div>
+                                <ul class="price-list">
+                                    <li class="right-second-item__price-item">
+                                        <div class="item-name">Обеспечение безопасности VIP-клиентов</div>
+                                        <div class="dot"></div>
+                                        <div class="item-price">от 550 руб</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service-first-item third">
+                <div class="service-first-item__inner">
+                    <div class="inner-item__wrapper inner-item">
+                        <div class="inner-item__left left-item">
+                            <div class="left-item__title">
+                                <h2>Сопровождение грузов</h2>
+                            </div>
+                            <div class="left-item__text">
+                                <p>Защита ценных грузов при их транспортировке обеспечита их сохранность в любых услувиях и исключит риск их потери. </p>
+                            </div>
+                            <ul class="left-item__text-list">Сопровождение грузов включает такие направления работы:
+                                    <li class="left-item__text-listitem">оперативно обеспечить безопасность сопровождаемого имущества;</li>
+                                    <li class="left-item__text-listitem">оперативно оценить ситуацию в случае ЧП для предотвращения посягательства и хищения охраняемого имущества;</li>
+                                    <li class="left-item__text-listitem">оптимально разработать схему маршрута для передвижения экипажа учитывая все особенности дорожной ситуации;</li>
+                            </ul>
+                            <div class="left-item__price">
+                                <div class="left-item__price-title">
+                                    Стоимость в час за один пост:
+                                </div>
+                                <ul class="price-list">
+                                    <li class="left-item__price-item">
+                                        <div class="item-name"> Автотранспортом в пределах Москвы и области</div>
+                                        <div class="dot plus-gap"></div>
+                                        <div class="item-price">от 280 руб</div>
+                                    </li>
+                                    <li class="left-item__price-item">
+                                        <div class="item-name">По территории РФ любыми видами транспорта</div>
+                                        <div class="dot plus-gap"></div>
+                                        <div class="item-price">от 210 руб</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inner-item__right"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="service-second-item fourth">
+                <div class="service-second-item__inner">
+                    <div class="inner-second-item__wrapper inner-second-item">
+                        <div class="inner-second-item__left"></div>
+                        <div class="inner-second-item__right right-second-item">
+                            <div class="right-second-item__title">
+                                <h2>Системы безопасности</h2>
+                            </div>
+                            <div class="right-second-item__text">
+                                <p>Эффективность системы безопасности любого объекта зависит от технической оснащенности объекта средствами сигнализации и мониторинга. Техническое оснащение объектов — один из важных способов противостоять незаконным посягательствам злоумышленников. </p>
+                            </div>
+                            <ul class="right-second-item__text-list">Техническое оснащение включает такие виды работ:
+                                    <li class="right-second-item__text-listitem">разработка концепций технического оснащения объектов различной сложности;</li>
+                                    <li class="right-second-item__text-listitem">установка систем охранной сигнализации;</li>
+                                    <li class="right-second-item__text-listitem">установка систем пожарной сигнализации;</li>
+                                    <li class="right-second-item__text-listitem">установка систем видонаблюдения;</li>
+                                    <li class="right-second-item__text-listitem">установка систем контроля доступа;</li>
+                            </ul>
+                            <div class="right-second-item__price">
+                                <div class="right-second-item__price-title">
+                                    Стоимость услуг рассчитывается индивидуально исходя из особенностей объекта и требований заказчика
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service-first-item fifth">
+                <div class="service-first-item__inner">
+                    <div class="inner-item__wrapper inner-item">
+                        <div class="inner-item__left left-item">
+                            <div class="left-item__title">
+                                <h2>Охрана массовых мероприятий</h2>
+                            </div>
+                            <ul class="left-item__text-list">Обеспеечение безопасности культурно-массовых мероприятий подразумевает наличие большого количества сотрудников компании и технического оснащения и включает такие услуги:
+                        
+                                    <li class="left-item__text-listitem">осуществление мониторинга безопасности в период подготовки массового мероприятия и/или в период его проведения;</li>
+                                    <li class="left-item__text-listitem">организация пропускного режима и предотвращение несанкционированного прохода/проезда на территорию охраняемого объекта;</li>
+                                    <li class="left-item__text-listitem">выявление запрещенных предметов (оружие, наркотики, взрывчатые вещества);
+                                    </li>
+                                    <li class="left-item__text-listitem">осуществление контроля за соблюдением установленного во время проведения мероприятия порядка; -Оперативное пресечение любых нарушений;
+                                    </li>
+                                    <li class="left-item__text-listitem">сопровождение и размещение гостей, в том числе и VIP персон;
+                                    </li>
+                                    <li class="left-item__text-listitem">организация взаимодействия с силовыми государственными структурами;
+                                    </li>
+                            </ul>
+                            <div class="left-item__price">
+                                <div class="left-item__price-title">
+                                    Стоимость в час за один пост:
+                                </div>
+                                <ul class="price-list">
+                                    <div class="left-item__price-item">Обеспечение безопасности культурно-массовых</div>
+                                    <li class="left-item__price-item">
+                                        <div class="item-name">мероприятий</div>
+                                        <div class="dot"></div>
+                                        <div class="item-price">от 350 руб</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inner-item__right"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages" id="advantages">
+                <div class="advantages__container">
+                    <div class="advantages__wrapper wrapper-advantages">
+                        <div class="wrapper-advantages__question">
+                            <h3>Почему выбирают нас</h3>
+                        </div>
+                        <div class="wrapper-advantages__title">
+                            <h2>Преимущества охранной компании СТБ</h2>
+                        </div>
+                        <div class="wrapper-advantages__content content-advantages">
+                            <div class="content-advantages__item item-advantages">
+                                <div class="item-advantages__image">
+                                    <img src="./img/star.svg" alt="star-logo">
+                                </div>
+                                <div class="item-advantages__name">
+                                    <h4>Опыт работы</h4>
+                                </div>
+                                <div class="item-advantages__text">
+                                    <span>Компания успешно работает более 15 лет на рынке</span>
+                                </div>
+                            </div>
+                            <div class="content-advantages__item item-advantages">
+                                <div class="item-advantages__image">
+                                    <img src="./img/message.svg" alt="message-logo">
+                                </div>
+                                <div class="item-advantages__name">
+                                    <h4>КРУГЛОСУТОЧНАЯ ПОДДЕРЖКА</h4>
+                                </div>
+                                <div class="item-advantages__text">
+                                    <span>Служба принимает информацию с объектов 24/7 и координирует работу всех подразделений</span>
+                                </div>
+                            </div>
+                            <div class="content-advantages__item item-advantages">
+                                <div class="item-advantages__image">
+                                    <img src="./img/professionalism.svg" alt="professionalism-logo">
+                                </div>
+                                <div class="item-advantages__name">
+                                    <h4>ПРОФЕССИОНАЛИЗМ</h4>
+                                </div>
+                                <div class="item-advantages__text">
+                                    <span>Сотрудники постоянно повышают свой уровень и навыки, проходят ежеквартальную аттестации</span>
+                                </div>
+                            </div>
+                            <div class="content-advantages__item item-advantages">
+                                <div class="item-advantages__image">
+                                    <img src="./img/eye.svg" alt="eye-logo">
+                                </div>
+                                <div class="item-advantages__name">
+                                    <h4>КОНТРОЛЬ КАЧЕСТВА</h4>
+                                </div>
+                                <div class="item-advantages__text">
+                                    <span>В компании есть отдел, отвечающий за контроль выполнения сотрудниками их обязанностей</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-advantages__button">
+                            <button class="advantages__button">ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="clients" id="clients">
+                <div class="clients__container">
+                    <div class="clients__words">
+                        <span>Нам доверяют</span>
+                    </div>
+                    <div class="clients__title">
+                        <span>Наши клиенты</span>
+                    </div>
+                    <div class="clients__slider swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="clients__slider-wrapper swiper-wrapper">
+                          <!-- Slides -->
+                            <div class="clients__slide swiper-slide">
+                                <h1>Slide 1</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="clients__slide swiper-slide">
+                                <h1>Slide 2</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="clients__slide swiper-slide">
+                                <h1>Slide 3</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="clients__slide swiper-slide">
+                                <h1>Slide 4</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="clients__slide swiper-slide">
+                                <h1>Slide 5</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="arrow-prev">
+                            <img src="./img/arrow-slider.svg" alt="arrow-slider">
+                        </div>
+                        <div class="arrow-next">
+                            <img src="./img/arrow-slider.svg" alt="arrow-slider">
+                        </div>
+                      </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
     @@include("blocks/footer.html")
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </body>
 
 </html>
