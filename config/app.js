@@ -1,4 +1,4 @@
-import news from '../db/news.json';
+//import news from '../db/news.json';
 
 const isProd = process.argv.includes('--production');
 const isDev = !isProd;
@@ -13,12 +13,12 @@ export default {
     rename: { //нужны настройка
         suffix: ".min"
     },
-    pug: { 
+/*     pug: { 
         pretty: isDev, //настройка чтобы файл index.html не сжимался
         data: { //настройка для передачи данных из json файла
             news: news
         }
-    },
+    }, */
     webpack: { //сюда пишем настройки
         mode: isProd ? "production" : "development"
     },

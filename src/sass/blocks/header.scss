@@ -506,6 +506,7 @@
 
 .burger {
 	display: none;
+	cursor: pointer;
 	@media (max-width: rem(767)){
 		
 			display: block;

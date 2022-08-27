@@ -1,11 +1,11 @@
 {
-  "name": "gulpStart",
+  "name": "Leonis",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "gulp --experimental-json-modules",
+    "start": "gulp",
     "build": "gulp --production --experimental-json-modules"
   },
   "browserslist": [

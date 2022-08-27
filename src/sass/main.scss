@@ -65,6 +65,7 @@ body {
 	// Сайт загружен
 	.loaded & {
 	}
+	position: relative;
 }
 a {
 	cursor: pointer;
@@ -202,6 +203,7 @@ button:hover {
 @import "./blocks/header.scss";
 @import "./blocks/company.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/modal.scss";
 
 // Подключение стилей отдельных страниц
 //@import "./blocks/home.scss";
