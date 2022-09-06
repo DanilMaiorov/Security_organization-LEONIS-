@@ -19,14 +19,20 @@ export const modal = () => {
             if(e.target.closest('.button__question')) {
                 modal.style.display = 'block';
                 modalQuestion.style.visibility = 'visible';
+                modalQuestion.style.position = 'absolute';
+                modalQuestion.style.top = '200px';
             }
             if(e.target.closest('.button__tender')) {
                 modal.style.display = 'block';
                 modalTender.style.visibility = 'visible';
+                modalTender.style.position = 'absolute';
+                modalTender.style.top = '200px';
             }
             if(e.target.closest('.button__phone')) {
                 modal.style.display = 'block';
                 modalPhone.style.visibility = 'visible';
+                modalPhone.style.position = 'absolute';
+                modalPhone.style.top = '200px';
             } 
         });
     }); 
